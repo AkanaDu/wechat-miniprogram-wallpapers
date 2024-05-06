@@ -53,6 +53,10 @@
 					<navigator url="" class="more">更多...</navigator>
 				</template>
 			</common-title>
+			
+			<view class="content">
+				<theme-item v-for="item in 8" :key="item"></theme-item>
+			</view>
 		</view>
 	</view>
 </template>
@@ -159,6 +163,14 @@
 			.more{
 				font-size: 32rpx;
 				color: #888;
+			}
+			
+			.content {
+				margin-top: 25rpx;
+				padding: 0 25rpx;
+				display: grid;
+				gap: 15rpx;
+				grid-template-columns: repeat(3, 1fr);
 			}
 		}
 	} 
